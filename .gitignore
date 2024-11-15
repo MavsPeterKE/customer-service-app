@@ -1,0 +1,39 @@
+# Maven build output
+target/
+*.log
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS-generated files (macOS)
+.DS_Store
+
+# Ignore local configuration files
+application.properties
+*.env
+
+# Ignore Maven wrapper files
+.mvn/
+
+# Ignore Spring Boot jar/war files
+*.jar
+*.war
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore compiled class files
+*.class
+
+# Ignore Docker-related files if not needed for version control
+docker-compose.override.yml
+

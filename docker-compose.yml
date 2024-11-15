@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  customer-service-app:
+    build: .
+    container_name: customer-service-app
+    command: ["java", "-jar", "/app/rest-app.jar"]
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://host.docker.internal:3306/bank_rest
+      - SPRING_DATASOURCE_USERNAME=bank
+      - SPRING_DATASOURCE_PASSWORD=admin
+      - SPRING_REDIS_HOST=redis
+    ports:
+      - "8081:8080"
