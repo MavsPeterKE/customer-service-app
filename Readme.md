@@ -41,11 +41,3 @@ Ensure that you have the following installed on your machine:
 - **MySql** (or another database): Configured in `application.properties` for database interaction.
 
 ---
-
-## Installation
-
-### Clone the repository
-
-```bash
-git clone https://github.com/yourusername/customer-service.git
-cd customer-service
